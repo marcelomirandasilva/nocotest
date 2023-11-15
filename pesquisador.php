@@ -76,9 +76,6 @@ for ($i = 0; $i < 20000; $i++) {
     } else {
         // Processar a resposta da API
         $obj = ($response);
-        /*print_r( $obj );
-        echo "<br />";
-        echo "<br />"; */
     }
 
     // Fechar a conexão cURL

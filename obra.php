@@ -87,17 +87,8 @@ for ($i = 0; $i < 200000; $i++) {
             echo 'Erro na solicitação: ' . curl_error($ch);
         } else {
             // Processar a resposta da API
-            
             $obj = json_decode($response);
-
             $id_obra = $obj->Id;
-/* 
-
-            print_r( $obj );
-            echo "<br />";
-            echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-            echo "<br />"; */
-            
         }
 
 
@@ -131,23 +122,11 @@ for ($i = 0; $i < 200000; $i++) {
     if (curl_errno($ch)) {
         echo 'Erro na solicitação: ' . curl_error($ch);
     } else {
-        // Processar a resposta da API
-     /*    $obj = ($response);
-        print_r( $obj );
-        echo "<br />";
-        echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-        echo "<br />";
-      */   
-     
-       
      //   echo "*";
-        
     }
 
     // Fechar a conexão cURL
     curl_close($ch);
-
-
 
     $counter++;
     
@@ -169,6 +148,5 @@ for ($i = 0; $i < 200000; $i++) {
 
 
 file_put_contents($log_file, "\nTotal adicionado 200.000 Obras", FILE_APPEND);
-
 
 ?>

@@ -44,11 +44,7 @@ for ($i = 0; $i < 30; $i++) {
     if (curl_errno($ch)) {
         echo 'Erro na solicitação: ' . curl_error($ch);
     } else {
-        // Processar a resposta da API
-        $obj = ($response);
-        //print_r( $obj );
         echo "*";
-        
     }
 
     // Fechar a conexão cURL

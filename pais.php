@@ -50,12 +50,7 @@ for ($i = 0; $i < 30; $i++) {
     } else {
         // Processar a resposta da API
         $obj = ($response);
-        /* print_r( $obj );
-        echo "<br />";
-        echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-        echo "<br />"; */
         echo ">";
-        
     }
 
     // Fechar a conexão cURL
@@ -64,8 +59,6 @@ for ($i = 0; $i < 30; $i++) {
 }
 
 file_put_contents($log_file, "\nAdicionado 30 Países ", FILE_APPEND);
-
-
 
 
 ?>
